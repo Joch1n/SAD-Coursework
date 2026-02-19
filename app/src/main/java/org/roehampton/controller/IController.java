@@ -1,6 +1,7 @@
 package org.roehampton.controller;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public interface IController {
 
@@ -12,7 +13,8 @@ public interface IController {
      * @param end    the end date
      */
     void loadSingleShare(String symbol, LocalDate start, LocalDate end);
-
+    void setCompanies(List<String> companies);
+    void setDateRange(LocalDate start, LocalDate end);
     /**
      * Load and compare share prices for two symbols within a date range.
      *
