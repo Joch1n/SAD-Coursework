@@ -1,31 +1,17 @@
 package org.roehampton.businesslogic;
 
 import org.roehampton.dataaccess.IAPIClient;
-<<<<<<< HEAD
-=======
 import org.roehampton.dataaccess.IShareDatabase;
-import org.roehampton.domain.PricePoint;
 import org.roehampton.domain.PriceSeries;
->>>>>>> 175db492dfc75795142f6feb59e70809610f8833
 
 import java.time.Clock;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Set;
+import java.util.Objects;
 
 public class DataService implements IDataService {
 
-<<<<<<< HEAD
-    private static final int MAX_COMPANIES = 2;
-
-    private final ISharePriceRepository repository;
-    private final IAPIClient apiClient;
-=======
     private final IShareDatabase db;
     private final IAPIClient api;
->>>>>>> 175db492dfc75795142f6feb59e70809610f8833
     private final Clock clock;
 
     public DataService(IShareDatabase db, IAPIClient api, Clock clock) {
