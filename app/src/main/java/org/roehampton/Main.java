@@ -14,7 +14,7 @@ public class Main {
 
         PriceSeries priceSeries = a.getSharePrices("AAPL", LocalDate.of(2024, 2, 2), LocalDate.of(2026, 2, 5));
 
-        // Outputs some data gathered from the API in readable format
+        /* Outputs some data gathered from the API in readable format */
         priceSeries.getPoints().stream()
                 .limit(5)
                 .forEach(p -> System.out.println(priceSeries.getSymbol() + "-> " + p.getDate() + " : " + p.getClosePrice()));
